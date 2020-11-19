@@ -14,10 +14,6 @@ body {
   margin: auto;
 }
 
-.logo__image {
-  min-width: 100%;
-}
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -428,6 +424,7 @@ template {
   overflow: hidden;
   border-radius: 6px;
   height: 40px;
+  font-weight: bold;
 }
 
 .search__input {
@@ -491,12 +488,16 @@ template {
   .logo {
     width: 132px;
   }
+  .logo__image {
+    width: 132px;
+  }
   .navbar-top {
     padding-top: 30px;
     padding-bottom: 30px;
   }
   .navbar__search {
     margin-left: auto;
+    margin-right: 74px;
   }
   .navbar-menu {
     padding-top: 22px;
@@ -548,8 +549,15 @@ template {
 }
 
 @media (max-width: 576px) {
-  .logo {
+  .container {
+    max-width: 87.5%;
+  }
+  .logo__image {
     width: 99px;
+  }
+  .navbar-top {
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */
