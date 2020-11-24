@@ -7,4 +7,10 @@ var mySwiper = new Swiper('.swiper-container', {
     nextEl: '.slider-button--next',
     prevEl: '.slider-button--prev',
   },
+
+  // Листаем слайды кнопками
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
 })
