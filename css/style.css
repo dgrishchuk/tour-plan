@@ -695,7 +695,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 9px;
+  margin-bottom: 6px;
 }
 
 .booking__price {
@@ -799,7 +799,7 @@ template {
   min-height: 45px;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 25px;
   border-radius: 4px;
   background-color: #EC1F46;
@@ -876,6 +876,13 @@ template {
   }
   .booking {
     width: 340px;
+    padding: 29px 23px;
+  }
+  .booking__per-room {
+    margin-top: -3px;
+  }
+  .booking__info {
+    margin-bottom: 8px;
   }
   .slider {
     width: 100%;
@@ -983,10 +990,13 @@ template {
     padding-bottom: 25px;
   }
   .slider {
-    height: 250px;
+    height: 179px;
   }
   .hotel__slider {
     margin-bottom: 20px;
+  }
+  .hotel-info {
+    padding-bottom: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
