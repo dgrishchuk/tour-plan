@@ -3,7 +3,7 @@
     max-width: 960px
   .hotel-slider
     width: 590px
-  .swiper
+  .hotel
     &-slide
       &__image
         width: 100%
@@ -15,19 +15,15 @@
     max-width: 700px
   .logo
     width: 132px
-    // Мои правки
     &__image
       width: 132px
-    // ^ Мои правки
   .navbar
     &-top
       padding-top: 30px
       padding-bottom: 30px
     &__search
       margin-left: auto
-      // Мои правки
       margin-right: min(74px)
-      // ^ Мои правки
     &-menu
       padding-top: 22px
       padding-bottom: 22px
@@ -47,6 +43,8 @@
       margin-bottom: 30px
     &-right
       flex-direction: row
+    &-slider
+      width: 100%
   .booking
     width: 340px
     padding: 29px 23px
@@ -54,10 +52,12 @@
       margin-top: -3px
     &__info
       margin-bottom: 8px
-  .hotel-slider
-    width: 100%
   .map
     width: 340px
+  .reviews
+    &-slider
+      &__item
+        max-width: 580px
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -103,12 +103,12 @@
   .breadcrumb-list
     padding-top: 23px
     padding-bottom: 0
-  .hotel-slider
-    height: 350px
   .hotel
     &-right
       flex-direction: column
       min-height: 450px
+    &-slider
+      height: 350px
   .booking
     width: 100%
   .map
@@ -122,6 +122,22 @@
       flex-direction: column
       align-items: flex-start
       padding: 72px 0 73px 0
+  .reviews
+    &-slider
+      &__item
+        padding: 0 30px 30px
+        &::after, &::before
+          display: none
+      &__button
+        top: 30px
+        &--prev
+          left: 50%
+          transform: translate(-50%, 0)
+          margin-left: -65px
+        &--next
+          right: 50%
+          transform: translate(50%, 0)
+          margin-right: -65px
 @media (max-width: 576px)
   .container
     max-width: 87.5%
@@ -132,12 +148,12 @@
     &-top
       padding-top: 25px
       padding-bottom: 25px
-  .hotel-slider
-    height: 179px
   .booking
     padding: 27px 23px
     margin-bottom: 10px
   .hotel
+    &-slider
+      height: 179px
     &__slider
       margin-bottom: 20px
     &-info
@@ -148,3 +164,13 @@
       margin-bottom: 37px
   .subscribe
     width: 100%
+@media (max-width: 480px)
+  .hotel
+    padding-bottom: 39px
+    &-right
+      min-height: 403px
+  .map
+    height: 173px
+  iframe
+    width: 100%
+    height: 173px
