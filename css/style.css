@@ -905,7 +905,7 @@ template {
 }
 
 .reviews {
-  padding: 40px 0 70px 0;
+  padding: 11px 0 70px 0;
 }
 
 .reviews__title {
@@ -916,7 +916,7 @@ template {
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 70px;
+  margin-bottom: 69px;
 }
 
 .reviews-slider__item {
@@ -978,12 +978,14 @@ template {
 
 .reviews-slider__button--prev {
   background-image: url(../img/arrow-prev-secondary.svg);
-  left: 0;
+  left: 18px;
+  top: 149px;
 }
 
 .reviews-slider__button--next {
   background-image: url(../img/arrow-next-secondary.svg);
-  right: 0;
+  right: 18px;
+  top: 149px;
 }
 
 .reviews-slider__profile {
@@ -1007,7 +1009,7 @@ template {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 9px;
+  margin-bottom: -3px;
 }
 
 .reviews-slider__username {
@@ -1133,8 +1135,20 @@ template {
   .map {
     width: 340px;
   }
+  .reviews-slider__button--prev {
+    left: 1px;
+    top: 172px;
+  }
+  .reviews-slider__button--next {
+    right: 1px;
+    top: 172px;
+  }
   .reviews-slider__item {
     max-width: 580px;
+  }
+  .reviews__title {
+    font-size: 30px;
+    margin-bottom: 47px;
   }
 }
 
@@ -1225,6 +1239,9 @@ template {
   iframe {
     width: 100%;
   }
+  .newsletter {
+    max-height: 320px;
+  }
   .newsletter-wrapper {
     max-width: 576px;
     width: 92%;
@@ -1235,7 +1252,6 @@ template {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding: 72px 0 73px 0;
   }
   .reviews-slider__item {
     padding: 0 30px 30px;
@@ -1285,13 +1301,58 @@ template {
     padding-bottom: 40px;
   }
   .newsletter {
-    padding: 76px 0 83px 0;
+    padding: 0px 0 0px 0;
   }
-  .newsletter__title {
-    margin-bottom: 37px;
+  .newsletter-wrapper {
+    width: 87%;
+    height: 320px;
+    padding: 72px 0 73px 0;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newsletter-title {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 5px;
+  }
+  .newsletter-title__strong {
+    font-size: 30px;
+    line-height: 38px;
+    margin-top: 5px;
+  }
+  .newsletter__subscribe {
+    margin-bottom: 11px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
   }
   .subscribe {
     width: 100%;
+  }
+  .subscribe__input {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: #BDBDBD;
+    padding-left: 19px;
+  }
+  .reviews__title {
+    padding: 0 30px;
+    margin: 28px auto 42px auto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .reviews-slider__button--prev {
+    margin-left: -91px;
+  }
+  .reviews-slider__button--next {
+    margin-right: -91px;
   }
 }
 
