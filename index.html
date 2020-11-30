@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,9 +32,9 @@
         </a>
         <!-- /.user -->
         <button class="menu-button navbar-top__menu-button">
-            <span class="menu-button__line"></span>
-            <span class="menu-button__line"></span>
-            <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
         </button>
       </div>
       <!-- /.navbar-top -->
@@ -103,22 +103,22 @@
       <!-- /.hotel-info -->
       <div class="hotel-grid">
         <div class="swiper-container hotel-slider hotel__slider">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide hotel-slider__item">
-                <img class="hotel-slider__image" src="img/slide.jpg" alt="slide">
-              </div>
-              <div class="swiper-slide hotel-slider__item">
-                <img class="hotel-slider__image" src="img/bathroom.jpg" alt="slide">
-              </div>
-              <div class="swiper-slide hotel-slider__item">
-                <img class="hotel-slider__image" src="img/buffet.jpg" alt="slide">
-              </div>
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide hotel-slider__item">
+              <img class="hotel-slider__image" src="img/slide.jpg" alt="slide">
             </div>
-            <!-- If we need navigation buttons -->
-            <button class="hotel-slider__button hotel-slider__button--prev"></button>
-            <button class="hotel-slider__button hotel-slider__button--next"></button>
+            <div class="swiper-slide hotel-slider__item">
+              <img class="hotel-slider__image" src="img/bathroom.jpg" alt="slide">
+            </div>
+            <div class="swiper-slide hotel-slider__item">
+              <img class="hotel-slider__image" src="img/buffet.jpg" alt="slide">
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <button class="hotel-slider__button hotel-slider__button--prev"></button>
+          <button class="hotel-slider__button hotel-slider__button--next"></button>
         </div>
         <!-- /.swiper-container -->
         <div class="hotel-right">
@@ -141,7 +141,7 @@
                 </div>
               </div>
               <!-- /.booking__room -->
-                </div>
+            </div>
             <!-- /.booking__info -->
             <div class="booking__call-center">
               <span class="booking__heading">Quick Booking</span>
@@ -158,18 +158,218 @@
             <!-- Карта Google -->
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3565.896551706787!2d98.29356151077815!3d7.890700221539081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sru!4v1606319248645!5m2!1sru!2sru"
-              width="347" height="213" style="border:0;" allowfullscreen="" aria-hidden="false"
-              tabindex="0"></iframe>
+              width="347" height="213" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
           <!-- /.map -->
-          </div>
-          <!-- /.hotel-right -->
+        </div>
+        <!-- /.hotel-right -->
       </div>
       <!-- /.hotel-grid -->
     </div>
     <!-- /.container -->
   </section>
   <!-- /.hotel -->
+  <!-- Секция Packages с CSS grid -->
+  <section class="packages">
+    <div class="container">
+      <h2 class="packages__title">Other Packages</h2>
+      <div class="packages-wrapper">
+        <!-- ОСНОВНАЯ БОЛЬШАЯ КАРТА -->
+        <div class="packages-card">
+          <!-- Блок с картинкой -->
+          <div class="packages-card__img">
+            <img src="img/Packages/hotel-blue-haven.jpg" alt="Photo: Hotel Blue Haven" class="packages-card__img">
+            <span class="packages__flash-offer-big">Flash Offer</span>
+          </div>
+          <!-- Блок с описанием отеля и ценой -->
+          <div class="packages-card__list">
+            <div class="stars packages-card__stars">
+              <img src="img/Star.svg" alt="Star">
+              <img src="img/Star.svg" alt="Star">
+              <img src="img/Star.svg" alt="Star">
+              <img src="img/Star.svg" alt="Star">
+              <img src="img/Star.svg" alt="Star">
+            </div>
+            <h1 class="packages-card__title">Hotel Blue Haven</h1>
+            <p class="packages-card__p">
+              Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum magna llit. Ipsum est fugiat
+              velit ea
+              llamco do esse ut in veniam sun in onsequat. Aute quis duis epteur excepteur ipsum occaecat eiusmod
+              nsectetur enim
+              laborum magna mollit. Ipsum est fugiat velit ea ullamco do
+            </p>
+            <div class="packages-card__room">
+              <div class="packages-card__text">
+                <img src="img/map-pin.svg" alt="Icon: location" class="packages-card__icon">
+                <span class="packages-card__discription">1749 Wheeler Ridge Delaware</span>
+              </div>
+              <div class="packages-card__text">
+                <img src="img/user.svg" alt="Icon: user" class="packages-card__icon">
+                <span class="packages-card__discription">2 x Guests</span>
+              </div>
+              <div class="packages-card__text">
+                <img src="img/home.svg" alt="Icon: home" class="packages-card__icon">
+                <span class="packages-card__discription">1 x Room</span>
+              </div>
+            </div>
+            <!-- /.booking__room -->
+            <div class="packages-card__price">
+              <strong class="packages-card__old-price">$ 10,500</strong>
+              <strong class="packages-card__pricetag">$ 8,500</strong>
+            </div>
+            <!-- /.booking__price -->
+            <button class="packages-card__button">Book Now</button>
+          </div>
+          <!-- /.packages-card__list -->
+        </div>
+        <!-- /.packages-card -->
+        <!-- МАЛЕНЬКИЕ КАРТОЧКИ ОТЕЛЕЙ -->
+        <!-- 2 карточка -->
+        <div class="packages-mincard">
+          <!-- Блок с картинкой -->
+          <div class="packages-mincard__img">
+            <img src="img/Packages/hotel-belle-mare.jpg" alt="Photo: Belle Mare" class="packages-mincard__img">
+            <span class="packages__flash-offer">Flash Offer</span>
+          </div>
+          <!-- Блок с описанием отеля и ценой -->
+          <div class="packages-mincard__list">
+            <h1 class="packages-mincard__title">LUX* Belle Mare</h1>
+            <div class="packages-mincard__room">
+              <div class="packages-mincard__text">
+                <img src="img/map-pin.svg" alt="Icon: location" class="packages-mincard__icon">
+                <span class="packages-mincard__discription">1749 Wheeler Ridge Delaware</span>
+              </div>
+              <div class="packages-mincard__text">
+                <img src="img/user.svg" alt="Icon: user" class="packages-mincard__icon">
+                <span class="packages-mincard__discription">2 x Guests</span>
+              </div>
+              <div class="packages-mincard__text">
+                <img src="img/home.svg" alt="Icon: home" class="packages-mincard__icon">
+                <span class="packages-mincard__discription">1 x Room</span>
+              </div>
+            </div>
+            <!-- /.packages-mincard__room -->
+            <div class="packages-mincard__price">
+              <strong class="packages-mincard__old-price">$ 8,500</strong>
+              <strong class="packages-mincard__pricetag">$ 3,000</strong>
+            </div>
+            <!-- /.packages-mincard__price -->
+            <button class="packages-mincard__button">Book Now</button>
+          </div>
+          <!-- /.packages-mincard__list -->
+        </div>
+        <!-- /.packages-mincard -->
+        <!-- 3 карточка -->
+        <div class="packages-mincard">
+          <!-- Блок с картинкой -->
+          <div class="packages-mincard__img">
+            <img src="img/Packages/hotel-white-palace.jpg" alt="Photo: White Palace" class="packages-mincard__img">
+            <span class="packages__flash-offer">Flash Offer</span>
+          </div>
+          <!-- Блок с описанием отеля и ценой -->
+          <div class="packages-mincard__list">
+            <h1 class="packages-mincard__title">White Palace</h1>
+            <div class="packages-mincard__room">
+              <div class="packages-mincard__text">
+                <img src="img/map-pin.svg" alt="Icon: location" class="packages-mincard__icon">
+                <span class="packages-mincard__discription">1749 Wheeler Ridge Delaware</span>
+              </div>
+              <div class="packages-mincard__text">
+                <img src="img/user.svg" alt="Icon: user" class="packages-mincard__icon">
+                <span class="packages-mincard__discription">2 x Guests</span>
+              </div>
+              <div class="packages-mincard__text">
+                <img src="img/home.svg" alt="Icon: home" class="packages-mincard__icon">
+                <span class="packages-mincard__discription">1 x Room</span>
+              </div>
+            </div>
+            <!-- /.packages-mincard__room -->
+            <div class="packages-mincard__price">
+              <strong class="packages-mincard__old-price">$ 10,500</strong>
+              <strong class="packages-mincard__pricetag">$ 9,500</strong>
+            </div>
+            <!-- /.packages-mincard__price -->
+            <button class="packages-mincard__button">Book Now</button>
+          </div>
+          <!-- /.packages-mincard__list -->
+        </div>
+        <!-- /.packages-mincard -->
+        <!-- 4 карточка -->
+        <div class="packages-mincard">
+          <!-- Блок с картинкой -->
+          <div class="packages-mincard__img">
+            <img src="img/Packages/hotel-luxury-place.jpg" alt="Photo: Luxury Place" class="packages-mincard__img">
+            <span class="packages__flash-offer">Flash Offer</span>
+          </div>
+          <!-- Блок с описанием отеля и ценой -->
+          <div class="packages-mincard__list">
+            <h1 class="packages-mincard__title">Luxury Place</h1>
+            <div class="packages-mincard__room">
+              <div class="packages-mincard__text">
+                <img src="img/map-pin.svg" alt="Icon: location" class="packages-mincard__icon">
+                <span class="packages-mincard__discription">1749 Wheeler Ridge Delaware</span>
+              </div>
+              <div class="packages-mincard__text">
+                <img src="img/user.svg" alt="Icon: user" class="packages-mincard__icon">
+                <span class="packages-mincard__discription">2 x Guests</span>
+              </div>
+              <div class="packages-mincard__text">
+                <img src="img/home.svg" alt="Icon: home" class="packages-mincard__icon">
+                <span class="packages-mincard__discription">1 x Room</span>
+              </div>
+            </div>
+            <!-- /.packages-mincard__room -->
+            <div class="packages-mincard__price">
+              <strong class="packages-mincard__old-price">$ 4,500</strong>
+              <strong class="packages-mincard__pricetag">$ 2,500</strong>
+            </div>
+            <!-- /.packages-mincard__price -->
+            <button class="packages-mincard__button">Book Now</button>
+          </div>
+          <!-- /.packages-mincard__list -->
+        </div>
+        <!-- /.packages-mincard -->
+        <!-- 5 карточка -->
+        <div class="packages-mincard">
+          <!-- Блок с картинкой -->
+          <div class="packages-mincard__img">
+            <img src="img/Packages/hotel-five-star.jpg" alt="Photo: 123" class="packages-mincard__img">
+            <span class="packages__flash-offer">Flash Offer</span>
+          </div>
+          <!-- Блок с описанием отеля и ценой -->
+          <div class="packages-mincard__list">
+            <h1 class="packages-mincard__title">Hotel Five Star</h1>
+            <div class="packages-mincard__room">
+              <div class="packages-mincard__text">
+                <img src="img/map-pin.svg" alt="Icon: location" class="packages-mincard__icon">
+                <span class="packages-mincard__discription">1749 Wheeler Ridge Delaware</span>
+              </div>
+              <div class="packages-mincard__text">
+                <img src="img/user.svg" alt="Icon: user" class="packages-mincard__icon">
+                <span class="packages-mincard__discription">2 x Guests</span>
+              </div>
+              <div class="packages-mincard__text">
+                <img src="img/home.svg" alt="Icon: home" class="packages-mincard__icon">
+                <span class="packages-mincard__discription">1 x Room</span>
+              </div>
+            </div>
+            <!-- /.packages-mincard__room -->
+            <div class="packages-mincard__price">
+              <strong class="packages-mincard__old-price">$ 6,500</strong>
+              <strong class="packages-mincard__pricetag">$ 3,500</strong>
+            </div>
+            <!-- /.packages-mincard__price -->
+            <button class="packages-mincard__button">Book Now</button>
+          </div>
+          <!-- /.packages-mincard__list -->
+        </div>
+        <!-- /.packages-mincard -->
+      </div>
+      <!-- /.packages__wrapper -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.packages -->
   <section class="newsletter">
     <div class="newsletter-wrapper">
       <h2 class="newsletter-title newsletter__title">
@@ -212,7 +412,8 @@
                 gallery which
                 were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not
                 good as per
-                atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good.
+                atmosphere, it is very nearby most of the popular places but self location in a narrow street is not
+                good.
                 Overall it
                 was a good experience and could recommend.
               </p>
@@ -239,8 +440,10 @@
               <p class="reviews-slider__text">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nostrum placeat, perspiciatis error
                 nesciunt odit laborum fugiat impedit pariatur architecto molestias amet. Autem rem iusto quis optio quae
-                iure eos recusandae tempora esse ad nemo fugiat cupiditate voluptatem consectetur quia, temporibus debitis
-                repellat. Fugiat culpa officia aut iusto enim minima maxime, ex eaque officiis odit vero praesentium dolor
+                iure eos recusandae tempora esse ad nemo fugiat cupiditate voluptatem consectetur quia, temporibus
+                debitis
+                repellat. Fugiat culpa officia aut iusto enim minima maxime, ex eaque officiis odit vero praesentium
+                dolor
                 quos magni aperiam hic, earum quo laboriosam sit eligendi! Veniam, deleniti saepe.
               </p>
             </div>

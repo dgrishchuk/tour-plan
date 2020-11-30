@@ -12,6 +12,27 @@
   .card
     width: 230px
     height: 230px
+  
+  .packages
+    &-card
+      width: 630px
+      &__img
+        height: 100%
+        width: 100%
+        object-fit: cover
+      &__list
+        width: 50%
+      &__p
+        max-width: 90%
+        font-size: 13px
+      &__room
+        margin-top: 27px
+      &__old-price
+        margin-top: 23px
+    &-mincard
+      &__img
+        object-fit: cover
+  
 @media (max-width: 991px)
   .container, 
   .newsletter-wrapper
@@ -82,6 +103,21 @@
     height: 255px
     &__title
       max-width: 200px
+  
+  .packages
+    &__title
+      font-size: 30px
+      margin-bottom: 50px
+    &-wrapper
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: repeat(3, 2fr)
+      max-height: 100%
+    &-card
+      width: 100%
+      max-width: 700px
+      
+
+
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -168,6 +204,35 @@
   .card
     width: 48%
     height: 255px
+  
+  
+  .packages
+    &-wrapper
+      row-gap: 20px
+      column-gap: 20px
+    &-card
+      &__list
+        width: 50%
+        padding: 20px
+        margin: 0
+      &__title
+        margin-bottom: 20px
+      &__p
+        font-size: 12px
+        margin: 0
+        max-height: 152px
+      &__room
+        margin-top: 45px
+      &__old-price
+        margin-top: 15px
+      &__button
+        position: static
+        width: 100%
+        margin-top: 25px
+    &-mincard
+      &__list
+        padding: 22px
+
 @media (max-width: 576px)
   .container
     max-width: 87.5%
@@ -251,6 +316,86 @@
     width: 100%
     height: 255px
     &__title
+
+  .packages
+    &__title
+      font-size: 24px
+    &-wrapper
+      grid-template-columns: 100%
+      grid-template-rows: 6fr
+      max-height: 100%
+    &-card
+      grid-column: auto
+      height: 500px
+      &__img
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
+        left: 0
+        overflow: hidden
+        width: 100%
+        height: 250px
+      &__list
+        width: 100%
+        height: 250px
+        margin-top: 250px
+        padding: 20px
+      &__p
+        display: none
+      &__stars
+        display: none
+      &__title
+        margin-bottom: 10px
+      &__room
+        margin: 0
+      &__old-price
+        margin-top: 10px
+      &__button
+        position: static
+        width: 100%
+        margin-top: 11px
+
+    &-mincard
+      height: 500px
+      &__img
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        width: 100%
+        height: 250px
+        object-fit: cover
+        align-items: center
+      &__list
+        width: 100%
+        margin-top: 250px
+      &__title
+        margin-bottom: 10px
+      &__old-price
+        margin-top: 10px
+      &__button
+        position: static
+        width: 100%
+        margin-top: 11px
+    
+    &__flash-offer
+      position: absolute
+      left: 0
+      top: 26px
+      padding: 8px 21px 8px 11px
+      color: $light
+      background-color: $primary
+      border-radius: 0px 4px 4px 0px
+      font-weight: 600
+      font-size: 12px
+      line-height: 15px
+      z-index: 10
+
+
+
+
 @media (max-width: 480px)
   .hotel
     padding-bottom: 39px
