@@ -199,18 +199,18 @@
       right: 0
       bottom: 0
       top: 70px
-      padding-top: 30px
+      padding-top: 8px
       overflow: scroll
       &--visible
         display: block
     &-menu
       flex-direction: column
-      overflow: scroll
       &__item
         margin-bottom: 20px
         &--mobile
           &_visible
             display: block  
+            width: 100%
   .menu
     &-button
       display: flex
@@ -336,8 +336,9 @@
     &__image
       width: 99px
   .navbar
+    height: 70px
     &-top
-      padding-top: 25px
+      padding-top: 24px
       padding-bottom: 25px
   .booking
     padding: 27px 23px
@@ -574,7 +575,6 @@
 @media (max-width: 480px)
   .navbar
     &-button
-      padding-top: 10px
     &-menu
       &__item
         margin-bottom: 19px
@@ -582,7 +582,7 @@
       margin: auto
       margin-top: 7px
       margin-bottom: 20px
-      max-width: 72%
+      max-width: 87%
   .hotel
     padding-bottom: 39px
     &-right

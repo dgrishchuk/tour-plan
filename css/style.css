@@ -364,7 +364,6 @@ template {
 
 .navbar {
   background-color: #fff;
-  height: 70px;
 }
 
 .navbar-top {
@@ -1967,7 +1966,7 @@ template {
     right: 0;
     bottom: 0;
     top: 70px;
-    padding-top: 30px;
+    padding-top: 8px;
     overflow: scroll;
   }
   .navbar-button--visible {
@@ -1978,13 +1977,13 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    overflow: scroll;
   }
   .navbar-menu__item {
     margin-bottom: 20px;
   }
   .navbar-menu__item--mobile_visible {
     display: block;
+    width: 100%;
   }
   .menu-button {
     display: -webkit-box;
@@ -2161,8 +2160,11 @@ template {
   .logo__image {
     width: 99px;
   }
+  .navbar {
+    height: 70px;
+  }
   .navbar-top {
-    padding-top: 25px;
+    padding-top: 24px;
     padding-bottom: 25px;
   }
   .booking {
@@ -2474,9 +2476,6 @@ template {
 }
 
 @media (max-width: 480px) {
-  .navbar-button {
-    padding-top: 10px;
-  }
   .navbar-menu__item {
     margin-bottom: 19px;
   }
@@ -2484,7 +2483,7 @@ template {
     margin: auto;
     margin-top: 7px;
     margin-bottom: 20px;
-    max-width: 72%;
+    max-width: 87%;
   }
   .hotel {
     padding-bottom: 39px;
