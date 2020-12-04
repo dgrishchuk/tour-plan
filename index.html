@@ -14,19 +14,20 @@
 </head>
 
 <body>
-  <header class="navbar">
+  <header class="navbar navbar--mobile_fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="#" class="logo">
           <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
-        <form action="#" class="search navbar__search">
+        <form action="#" class="search navbar__search navbar__search--mobile_hidden">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: search">
           </button>
         </form>
-        <a href="#" class="user navbar__user">
+        <!-- /.search -->
+        <a href="#" class="user navbar__user navbar__user--mobile_hidden">
           <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
@@ -40,9 +41,29 @@
       <!-- /.navbar-top -->
     </div>
     <!-- /.container -->
-    <div class="navbar-bottom">
+    <div class="navbar-button">
       <div class="container">
         <ul class="navbar-menu">
+          <!-- Добавили Аватар в мобильное меню -->
+          <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+            <a href="#" class="user navbar__user navbar__user--mobile_visible">
+              <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
+              <span class="user__name user__name--light">Nathan</span>
+            </a>
+            <!-- /.user -->
+          </li>
+          <!-- /.navbar-menu__item -->
+          <!-- Добавили поиск в мобильное меню -->
+          <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+            <form action="#" class="search navbar__search navbar__search--mobile_visible">
+              <input type="text" class="search__input" placeholder="Search Location">
+              <button class="search__button">
+                <img src="img/search.svg" alt="Icon: search">
+              </button>
+            </form>
+            <!-- /.search -->
+          </li>
+          <!-- /.navbar-menu__item -->
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">All Deals</a></li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Activities</a></li>
@@ -54,7 +75,7 @@
       </div>
       <!-- /.container -->
     </div>
-    <!-- /.navbar-bottom -->
+    <!-- /.navbar-button -->
   </header>
   <!-- /.navbar -->
   <nav class="breadcrumb">
@@ -548,7 +569,7 @@
         <div class="footer__contact-details">
           <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
           <p class="footer__text">Feel free to contact us by phone, email or by our contact form</p>
-          <ul class="footer__ul footer__item--margin">
+          <ul class="footer__ul footer__ul--margin">
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
                 <img class="footer__icon" src="img/map-marker.svg" alt="icon: map">
