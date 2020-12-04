@@ -1651,12 +1651,16 @@ template {
   color: #e0e0e0;
 }
 
+.footer__disclaimer-wrapper {
+  position: relative;
+  margin-top: 101px;
+  width: 100%;
+}
+
 .footer__disclaimer-text {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2 / 4;
-  margin-top: 79px;
-  margin-left: 138px;
+  width: 300px;
+  margin: auto;
+  text-align: center;
 }
 
 .footer__disclaimer-link {
@@ -1667,19 +1671,13 @@ template {
   line-height: 15px;
   color: #ffffff;
   text-decoration: none;
-  margin-right: 9px;
+  margin: 0 5px 0 4px;
 }
 
 .footer__disclaimer-img {
-  width: 136px;
-  height: 22px;
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 1;
-  grid-column: 4 / 5;
-  margin-left: 150px;
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+  position: absolute;
+  right: 1px;
+  bottom: -3px;
 }
 
 @media (max-width: 1200px) {
@@ -1915,6 +1913,13 @@ template {
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
   }
+  .footer__disclaimer-wrapper {
+    margin-top: 6px;
+  }
+  .footer__disclaimer-text {
+    text-align: start;
+    margin: 0 0 0 -3px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2082,6 +2087,9 @@ template {
   .footer__input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .footer__disclaimer-wrapper {
+    margin-top: 50px;
   }
 }
 
@@ -2391,6 +2399,16 @@ template {
   }
   .footer__button {
     margin-top: 23px;
+  }
+  .footer__disclaimer-wrapper {
+    margin: 29px 0 0 -5px;
+  }
+  .footer__disclaimer-link {
+    margin: 0 2px 0 4px;
+  }
+  .footer__disclaimer-img {
+    left: 4px;
+    bottom: -35px;
   }
 }
 
