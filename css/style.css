@@ -2471,6 +2471,18 @@ template {
 }
 
 @media (max-width: 480px) {
+  .navbar-button {
+    padding-top: 10px;
+  }
+  .navbar-menu__item {
+    margin-bottom: 19px;
+  }
+  .navbar__search {
+    margin: auto;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    max-width: 72%;
+  }
   .hotel {
     padding-bottom: 39px;
   }
