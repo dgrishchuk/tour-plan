@@ -364,6 +364,7 @@ template {
 
 .navbar {
   background-color: #fff;
+  height: 70px;
 }
 
 .navbar-top {
@@ -1967,6 +1968,7 @@ template {
     bottom: 0;
     top: 70px;
     padding-top: 30px;
+    overflow: scroll;
   }
   .navbar-button--visible {
     display: block;
@@ -1976,6 +1978,7 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    overflow: scroll;
   }
   .navbar-menu__item {
     margin-bottom: 20px;
