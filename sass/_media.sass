@@ -167,7 +167,13 @@
       &-text
         text-align: start
         margin: 0 0 0 -3px
-        
+  .modal
+    &__dialog
+      padding: 33px 75px
+    &__form
+      min-width: 100%
+    &__info
+      margin-top: 10px
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -209,8 +215,7 @@
         margin-bottom: 20px
         &--mobile
           &_visible
-            display: block  
-            width: 100%
+            display: block
   .menu
     &-button
       display: flex
@@ -328,7 +333,13 @@
     &__disclaimer
       &-wrapper
         margin-top: 50px
-    
+  .modal
+    &__dialog
+      padding: 33px 70px
+    &__form
+      min-width: 100%
+    &__button
+      margin-bottom: 20px
 @media (max-width: 576px)
   .container
     max-width: 87.5%
@@ -572,17 +583,27 @@
       &-img
         left: 4px
         bottom: -35px
+  .modal
+    &__dialog
+      padding: 30px 20px
+    &__form
+      min-width: 250px
+    &__button
+      margin-bottom: 20px
 @media (max-width: 480px)
   .navbar
     &-button
     &-menu
       &__item
         margin-bottom: 19px
+        &--mobile
+          &_visible
+            max-width: 100%
     &__search
       margin: auto
-      margin-top: 7px
+      margin-top: 8px
       margin-bottom: 20px
-      max-width: 87%
+      max-width: 88%
   .hotel
     padding-bottom: 39px
     &-right
@@ -596,4 +617,11 @@
     &__card
       &--margin
         margin-bottom: 28px
-  
+  .modal
+    &__dialog
+      padding: 30px 20px
+    &__form
+      min-width: 200px
+    &__button
+      margin-bottom: 20px
+      
