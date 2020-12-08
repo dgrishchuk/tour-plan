@@ -1714,6 +1714,7 @@ template {
   top: 50%;
   left: 50%;
   max-width: 478px;
+  max-height: 100%;
   padding: 33px 88px;
   background-color: #0A223D;
   -webkit-transform: translate(-50%, -50%);
@@ -1725,6 +1726,7 @@ template {
   opacity: 0;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
+  overflow: auto;
 }
 
 .modal__dialog--visible {

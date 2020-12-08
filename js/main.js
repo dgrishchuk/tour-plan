@@ -55,22 +55,3 @@ $(document).ready(function () {
     modalDialog.removeClass('modal__dialog--visible');
   }
 });
-
-
-// Закрытие окна по кнопке ESC
-
-// $(function(){
-//   $('modal__overlay').keyup(function(){
-//     var modOverlay = $('.modal__overlay');
-//     var modDialog = $('.modal__dialog');
-//     modOverlay.removeClass('modal__overlay--visible');
-//     modDialog.removeClass('modal__dialog--visible');
-//   });
-
-
-// });
-
-
-// $('.modal__overlay').keyup(function() {
-//   $(this).removeClass('modal__overlay--visible');
-// });
