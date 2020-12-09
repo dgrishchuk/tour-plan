@@ -74,7 +74,7 @@ $(document).ready(function () {
       },
       subscribe: {
         required: "We need your email address to contact you",
-        subscribe: "Your email address must be in the format of name@domain.com"
+        minlength: "Your email address must be in the format of name@domain.com"
       },
     },
   });
