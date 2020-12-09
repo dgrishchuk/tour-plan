@@ -70,9 +70,17 @@ $(document).ready(function () {
       },
       phone: {
         required: "Please specify your phone",
+        minlength: "At least ten"
+      },
+      subscribe: {
+        required: "We need your email address to contact you",
+        subscribe: "Your email address must be in the format of name@domain.com"
       },
     },
   });
   })
+
+  // Маска телефона
+  $('.phone_us').mask('+7(999)999-99-99');
 
 });
